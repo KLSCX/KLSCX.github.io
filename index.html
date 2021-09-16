@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="can" width="500" height="500">抱歉，您的浏览器不支持 canvas，请使用其他浏览器</canvas>
+  <script>
+    const canvas = document.querySelector('#can');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(250, 250, 250, 0, Math.PI * 2, false);
+    ctx.fillStyle = 'rgb(6, 40, 90)';
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(250, 300, 200, 0, Math.PI * 2, false);
+    ctx.fillStyle = 'rgb(38, 99, 200)';
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(250, 350, 150, 0, Math.PI * 2, false);
+    ctx.fillStyle = 'rgb(199, 202, 211)';
+    ctx.fill();
+    ctx.closePath();
+
+    ctx.beginPath();
+    ctx.arc(250, 400, 100, 0, Math.PI * 2, false);
+    ctx.fillStyle = 'rgb(38, 99, 200)';
+    ctx.fill();
+    ctx.closePath();
+  </script>
+</body>
+</html>
