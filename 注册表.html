@@ -1,0 +1,45 @@
+<html>
+    <head align="center">
+    <title>xixixi</title>
+    	<script>
+   	 function a1()
+   	{
+   	   var p1=reg.mima1.value;
+   	   var p2=reg.mima2.value;
+   	   if(p1!=p2)
+		alert("密码不正确！");
+	   }
+	function a2()
+	{
+	   var s=reg.yes.value;
+		alert("成功注册！");
+		}
+   	 </script>
+    </head>
+    
+    <body bgcolor="#bababa" align="center">
+    <br><br><br><br><br>
+    <table border=2  align="center" bgcolor="#00AAEE" width="800" height="400">
+        <form name="reg">
+    	<tr><td align="center" width="700" colspan="6"><font face="华文琥珀" color="blue" size="6">学生信息管理系统注册</td></tr>
+    	<tr><td align="center" width="260"><font face="华文行楷" color="yellow" size="5">用户名:</td><td align="center"><input type="text" name="xm" maxlength="20"></td></tr>
+	<tr><td align="center" width="260"><font face="华文行楷" color="yellow" size="5">姓名:</td><td align="center"><input type="text" name="xm" maxlength="20"></td></tr>
+	<tr><td align="center" width="260"><font face="华文行楷" color="yellow" size="5">年龄:</td><td align="center"><input type="text" name="nl" maxlength="20"></td></tr>
+	<tr><td align="center" width="260"><font face="华文行楷" color="yellow" size="5">邮箱:</td><td align="center"><input type="text" class="textinput" id="email" name="email" onkeyup="checkEmail();"/></td></tr>
+    	<tr><td align="center"><font face="华文行楷" color="yellow" size="5">密码:</td><td align="center"><input type="password" name="mima1" maxlength="20" ></td></tr>
+	<tr><td align="center"><font face="华文行楷" color="yellow" size="5">确认密码:</td><td align="center"><input type="password" name="mima2" maxlength="20" οnblur=a1()></td></tr>
+        <tr><td align="center"><font face="华文行楷" color="yellow" size="5">性别：</td><td align="center"><input type="radio" value="男" name="xj">男<input type="radio" value="女" name="xj">女</td></tr>
+    	<tr><td align="center"><font face="华文行楷" color="yellow" size="5">学院：</td><td align="center">
+		<select name="xueyuan">
+			<option name="xx" selected>信息工程</option>
+			<option name="sl">水利工程</option>
+			<option name="wl">网络工程</option>
+			<option name="wy">外语</option>
+			<option name="tm">土木工程</option>
+		</select></td><tr>
+	<tr><td align="center"><font face="华文行楷" color="yellow" size="5">学生照片：</td><td align="center"><input type="file" col="410" row="40" ></textarea></td></tr>
+	<tr><td align="center" colspan="3"><input type="button" value="注册" name="yes" οnclick=a2()>      <input type="reset" value="reset" name="reset1"></td></tr>
+    	</form>
+    </table>
+    </body>
+</html>
