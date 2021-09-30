@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>制作一个小球弹跳的动画</title>
+  <style type="text/css">
+    canvas{
+      border:1px solid blue;
+    }
+  </style>
+
+</head>
+<body>
+<div>
+  <canvas id="canvas" width="600" height="600" >
+    Sorry!
+  </canvas>
+</div>
+</body>
+<script>
+  var ctx;
+  var canvas;
+  var startx=15;
+  var starty=15;
+
+  canvas = document.getElementById("canvas");
+  ctx = canvas.getContext("2d");
+  ctx.translate(50,50);
+  function a(){
+    vx=2;vy=0;g=0.2
+    setInterval(function(){
+      ctx.clearRect(0,0,600,600)
+      ctx.beginPath();
+      ctx.arc(startx, starty, 15, 0, Math.PI * 2, true);//画小球
+      vy+=g
+      startx=startx+vx;
+      starty=starty+vy;
+
+      if(starty+30>=600){
+        starty=570;
+        vy=vy*(-0.6)
+
+      }
+      ctx.closePath();
+      ctx.fill();
+
+    },10)
+
+  }
+
+  a();
+</script>
+</html>
