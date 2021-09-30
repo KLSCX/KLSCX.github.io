@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<title>Insert title here</title> 
+<!-- <script src="jQuery/jquery-1.10.2.js"></script>--> 
+<script type="text/javascript"> 
+	function countNum(){ 
+	var arrays = new Array(); 
+	var items = document.getElementsByName("check"); 
+	for(var i=0;i<items.length;i++){ 
+	if(items[i].checked){ 
+	arrays.push(items[i].value); 
+	} 
+	} 
+	alert("选中"+arrays.length+"个！"); 
+	}
+</script> 
+</head> 
+<body> 
+<input type="checkbox" value="1" name="check" checked/> 
+<input type="checkbox" value="2" name="check"/> 
+<input type="checkbox" value="3" name="check"/> 
+<input type="checkbox" value="4" name="check"/> 
+<input type="checkbox" value="5" name="check"/> 
+<input type="checkbox" value="6" name="check"/> 
+<input type="checkbox" value="7" name="check"/> 
+<input type="button" value="显示选中个数" id="btn" onclick="countNum();">
+</body> 
+</html> 
