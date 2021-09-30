@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>小球平抛运动</title>
+    </head>
+    <body>
+        <canvas id="mycanvas">浏览器不支持canvas</canvas>
+        <script>
+            var mycanvas = document.getElementById("mycanvas");
+            var ctx = mycanvas.getContext("2d");
+
+            var WIDTH = document.documentElement.clientWidth;
+            var HEIGHT = document.documentElement.clientHeight; 
+            mycanvas.width = WIDTH;
+            mycanvas.height = HEIGHT;
+            //定义一个小球类(位置、速度、颜色)
+            function Ball(x, y, velX, velY, color, size){
+                this.x = x;
+                this.y = x; 
+                this.velX = velX;
+                this.velY = velY;
+                this.color = color;
+                this.size = size;
+            }
+            var guiji = []; // 记录轨迹坐标
+            // 画出小球
+            Ball.prototype.draw = function(){
+                ctx.clearRect(0, 0, WIDTH, HEIGHT); //清空画布
+                ctx.beginPath();
+                ctx.fillStyle = this.color;
+                ctx.arc(this.x, this.y, this.size, 0, 2*Math.PI);
+                ctx.fill();
+                drawGuiji();
+                guiji.push([this.x, this.y]);
+            }
+            // 画出小球的移动轨迹
+            function drawGuiji(){
+                var t1 = guiji.length;
+                ctx.moveTo(0, 0);
+                ctx.strokeStyle = '#E0E0E0';
+                ctx.lineWidth = 1;
+                for(i=0; i<t1; i++)
+                {
+                    ctx.lineTo(guiji[i][0], guiji[i][1]);
+                    ctx.stroke();
+                }
+            }
+            // 更新小球的位置，速度等信息
+            Ball.prototype.update = function(){
+                // 落地反弹
+                if(this.y > HEIGHT)
+                {
+                    this.velY = -this.velY;
+                    this.velX = this.velX - this.velX * 0.005;
+                }
+                else
+                {
+                    this.velY = this.velY + 1 - this.velY * 0.01; //加速下落, 考虑了空气阻力，速度越大，阻力越大
+                    this.velX = this.velX - this.velX * 0.005;
+                }
+                this.x = this.x + this.velX;
+                this.y = this.y + this.velY;
+            }
+
+            // 循环
+            var ball = new Ball(0, 0, 8, 0, "red", 15);
+            function loop(){
+                ball.draw();
+                ball.update();
+                requestAnimationFrame(loop);
+            }
+
+            window.onload = loop;
+        </script>
+    </body>
+</html>
