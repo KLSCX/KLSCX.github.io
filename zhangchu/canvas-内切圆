@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head>
+<style>
+body {
+    background: white;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="https://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script><canvas id="ex" width="1000" height="1000"></canvas>
+<script>
+$(function() {
+    var cans = $("#ex")[0].getContext('2d');
+    cans.beginPath();
+    cans.arc(500, 250, 250, 0, Math.PI * 2, true);
+    cans.closePath();
+    cans.fillStyle = '#06285A';
+    cans.fill();
+    cans.beginPath();
+    cans.arc(500, 300, 200, 0, Math.PI * 2, true);
+    cans.closePath();
+    cans.fillStyle = '#2663C8';
+    cans.fill();
+    cans.beginPath();
+    cans.arc(500, 350, 150, 0, Math.PI * 2, true);
+    cans.closePath();
+    cans.fillStyle = '#C7CAD3';
+    cans.fill();
+    cans.beginPath();
+    cans.arc(500, 400, 100, 0, Math.PI * 2, true);
+    cans.closePath();
+    cans.fillStyle = '#2663C8';
+    cans.fill();
+    cans.font = '20px Microsoft Yahei';
+    cans.textAlign = 'center';
+    cans.textBaseline = 'middle';
+    cans.fillStyle = 'white';
+    cans.fillText('[文本]', 500, 50, 50);
+    cans.fillText('[文本]', 500, 150, 50);
+    cans.fillText('[文本]', 500, 250, 50);
+    cans.fillText('[文本]', 500, 400, 50);
+});
+</script>
+
+</body>
+</html>
