@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实验三</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <form>
+    <label for="name">姓名 <input type="text" placeholder="姓名" id="name" required></label>
+    <label for="password">
+      密码 
+      <input 
+        type="password" 
+        placeholder="密码" 
+        id="password" 
+        required 
+      >
+    </label>
+    <label for="re-password">
+      确认密码 
+      <input 
+        type="password" 
+        placeholder="确认密码" 
+        id="re-password" 
+        required 
+      >
+    </label>
+    <label for="age">年龄 <input type="number" placeholder="年龄" min="17" id="age" required></label>
+    <label for="weight">体重 <input type="number" placeholder="体重" min="30" id="weight" required></label>
+    <label for="email">电子邮件 <input type="email" placeholder="电子邮件" id="email" required></label>
+    <input type="submit" value="提 交">
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+</html>
