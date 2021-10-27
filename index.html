@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>山河旅行社</title>
-	<meta name="keywords" content="XXX集团">
-	<meta name="description" content="XXX集团">
+	<title>遇见河南旅行社</title>
+	<meta name="keywords" content="遇见河南旅行社">
+	<meta name="description" content="遇见河南旅行社">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	
@@ -16,6 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel='stylesheet' type='text/css' media="all" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap_zc.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all_zc.css"/>
+<link rel="stylesheet" type="text/css" href="css/top_style_zc.css"/>
 	
 	<!--[if lt IE 9]>
     <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -24,11 +27,10 @@
 
 </head>
 <body>
-	
 <div>
 	<!--header-->
-	<header class="header home_p">
-	   <div class="container">
+	<header class="header home_p" style="position:fixed;background-color: white;">
+	   <div class="container_top">
 		   <div class="logo">
 	   	   		<a href="index.html"><img src="images/logo.png" alt="" /></a>
 		   </div>
@@ -37,24 +39,27 @@
 		  	 <nav class="nav">
 		   		<ul>    
 		   			<li><a href="index.html" class="active">首页</a></li>
-		   			<li><a href="scenic_overview.html">景区概况</a></li>
-		   			<li><a href="court_travel.html">文苑之旅</a>
+		   			<li><a href="scenic_overview.html">名胜古迹</a></li>
+		   			<li><a href="court_travel.html">旅游住宿</a>
 		   				<ul>
-		   					<li><a href="court_travel.html">茶艺中心</a></li>  
-		   					<li><a href="court_travel.html">万竹林海</a></li>
-		   					<li><a href="court_travel.html">创意中心</a></li>
-		   					<li><a href="court_travel.html">花草园艺</a></li>
+		   					<li><a href="court_travel.html">酒店展示</a></li>  
+		   					<li><a href="court_travel_show.html">酒店联系</a></li>
 		   				</ul>
 		   			</li>
-		   			<li><a href="comfortable.html">舒雅住宅</a></li>
-		   			<li><a href="news.html">新闻动态</a>
+		   			<li><a href="comfortable.html">地方传说</a>
+					</li>
+		   			<li><a href="food.html">地方美食</a>
 		   				<ul>
-		   					<li><a href="news.html">公司新闻</a></li>
-		   					<li><a href="news.html">行业新闻</a></li>
+		   					<li><a href="food.html">特色名吃</a></li>
+		   					<li><a href="restaurant.html">地方餐馆</a></li>
+							<li><a href="origin.html">美食起源</a></li>
 		   				</ul>
 		   			</li>
-		   			<li><a href="feedback.html">留言中心</a></li>
-		   			<li><a href="contact.html">联系我们</a></li>
+		   			<li><a href="feedback.html">珍稀生物</a>
+					</li>
+					</li>
+		   			<li><a href="contact.html">联系我们</a>
+					</li>
 		   		</ul>
 		  	 </nav>
 		  	 <div class="search">
@@ -63,15 +68,25 @@
 		  	 		<i class="fa fa-search"></i>		  	
 		  	 	</span>
 		  	 	<span class="y_z">
-		  	 		<a href="" class="zh active">中</a><a href="" class="en">En</a>
-		  	 		
+		  	 		<a href="" class="zh active">中</a><a href="" class="en">En</a>		  	 		
 		  	 	</span>
 		  	 </div>
-		  </div>
-	   	
+		  </div>	   	
 	   </div>
 	</header>
-			
+<!--Include Js-->
+<script src="js/jquery.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--移动端导航-->
+<script src="js/jquery.mmenu.all.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--slick-->
+<script src="js/slick.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--placeholder-->
+<script src="js/jquery.placeholder.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){ $('input, textarea').placeholder(); });
+</script><br><br><br>
+<script src="js/public_zc.js" type="text/javascript" charset="utf-8"></script>
+
 	<!--banner  start-->
 	<section class="banner">
 	    <div><a href="index.html"><img src="images/jing1.jpg" alt=""></a></div>
@@ -82,7 +97,7 @@
 	<div class="jqgk">
 		<div class="contai">
 			<div class="top_tit">
-				<span class="span1"><a href="scenic_overview.html">旅社介绍</a></span><br />
+				<!-- <span class="span1"><a href="scenic_overview.html">旅社介绍</a></span><br /> -->
 				<!-- <span class="span2">SCENIC OVERVIEW</span> -->
 			</div>
 			<p class="wow bounceIn">
@@ -116,44 +131,6 @@
 		</ul>
 	</div>
 	<!--wyzl end-->
-	<div class="syzz">
-		<div class="top_tit">
-        	<span class="span1"><a href="scenic_overview.html">舒雅住宅</a></span><br />
-			<span class="span2">COMFORTABLE RESIDENTIAL</span>  
-		</div>
-		<div class="syzz_con  clearfix">
-			<div class="left">
-				<div><a href="comfortable.html"><img src="images/syzz_1.png" alt=""  class="vcenter"> <i></i></a></div>
-				<div><a href="comfortable.html"><img src="images/syzz_1.png" alt=""   class="vcenter"> <i></i></a></div>
-				<div><a href="comfortable.html"><img src="images/syzz_1.png" alt=""   class="vcenter"> <i></i></a></div>
-			</div>
-			<div class="right">
-				<img src="images/fang.png" alt="" />
-				<div class="fang_t">
-					<span>客 |</span>
-					<span>房 |</span>
-					<span>介 |</span>
-					<span>绍</span>
-				</div>
-				<div class="fang_c">
-				桃花林苑中有各式客房100套,房型分为中式、现代两个类型,以满足客人的不同需求…
-				</div>
-				<div class="pr_ne clearfix">
-					<span class="pr">
-					
-						上一个
-					</span>
-					<span class="ne">
-						下一个
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="xia_x">
-				<span class="img"></span>
-		</div>
-	</div>
-	<!--syzz end-->
 	<div class="home_news">
 		<div class="news_con">
 			<div class="top_tit">
@@ -213,91 +190,38 @@
 					</div>
 				</li>
 			</ul>
-			<a href="news.html" class="more">MORE</a>
 		</div>
 	</div>
+	<!--footer  start-->
+	<footer class="footer">
+		<div class="footer_con">
+			<div class="con">
+				<div class="nei">
+					<div class="">
+						<ul class="di_nav clearfix">
+							<li><a href="scenic_overview.html">名胜古迹</a></li>
+							<li><a href="court_travel.html">旅游住宿</a></li>
+							<li><a href="comfortable.html">地方传说</a></li>
+							<li><a href="news.html">地方美食</a></li>
+							<li><a href="feedback.html">珍稀动植物</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
+						<div class="links">友情链接
+							<ul>
+								<li><a href="">百度文化</a></li>
+								<li><a href="">新浪微博</a></li>
+								<li><a href="">百度知道</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
 
-	
- 
-    <!--footer  start-->
-    <footer class="footer">
-       <div class="footer_con">
-       		<div class="con">
-       			<div class="nei">
-       				<div class="">
-       					<ul class="di_nav clearfix">
-			   			<li><a href="scenic_overview.html">景区概况</a></li>
-			   			<li><a href="court_travel.html">文苑之旅</a></li>
-			   			<li><a href="comfortable.html">舒雅住宅</a></li>
-			   			<li><a href="news.html">新闻动态</a></li>
-			   			<li><a href="feedback.html">留言中心</a></li>
-			   			<li><a href="contact.html">联系我们</a></li>
-	       				</ul>
-	       				<div class="links">友情链接
-	       					<ul>
-	       						<li><a href="">百度文化</a></li>
-					   			<li><a href="">新浪微博</a></li>
-					   			<li><a href="">百度知道</a></li>
-	       					</ul>
-	       				</div>
-       				</div>
-       				<div class="clear"></div>
-       				<div class="lian">
-       					电话：<a href="tel:XXX">XXX</a><br />
-						邮箱：<a href="mailto:XXX">XXX</a><br />
-						手机：<a href="tel:XXX">XXX</a><br />
-						地址：XXXXXX<br />
-						<a href="map.html">网站地图</a><br />
-						<span> 
-							<a href="#" target="_blank">
-								<img src="images/yu.png" alt="" />
-							</a>
-							
-							<span class="er_a">
-								<img src="images/er.png" alt="" class="one_img"/> 
-								XXX公众号
-								<img src="images/erwei.png" alt="" class="er_img"/>
-							</span>
-							
-						</span> 	
-       				</div>
-       				
-       			</div>
-       		</div>
-       		
-       </div>
-       <div class="copy">Copyright© 2020  版权所有：XXX有限公司 </div>
+		</div>
+		<div class="copy">Copyright© 2020  版权所有：遇见河南有限公司 </div>
 	</footer>
-    <!--footer  end-->
-
-	<!--移动端  Mmenu-->
-	<nav id="mmenu">
-		
-		<ul>
-			
-			<li><a href="index.html" class="active">首页</a></li>
-   			<li><a href="scenic_overview.html">景区概况</a></li>
-   			<li><a href="court_travel.html">文苑之旅</a>
-            	<ul>
-                    <li><a href="court_travel.html">茶艺中心</a></li>  
-                    <li><a href="court_travel.html">万竹林海</a></li>  
-                    <li><a href="court_travel.html">创意中心</a></li>
-                    <li><a href="court_travel.html">花草园艺</a></li>
-                </ul>
-            </li>
-   			<li><a href="comfortable.html">舒雅住宅</a></li> 
-   			<li><a href="news.html">新闻动态</a>
-   				<ul>
-   					<li><a href="news.html">公司新闻</a></li>
-   					<li><a href="news.html">行业新闻</a></li>
-   				</ul>
-   			</li>
-   			<li><a href="feedback.html">留言中心</a></li>
-   			<li><a href="contact.html">联系我们</a></li>
-			 
-		</ul>
-	</nav>	
-		
+	<!--footer  end-->
 </div>	
 
 <!--Include Js-->
@@ -323,9 +247,5 @@
 <style>
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 </style>
-<div class="copyrights" id="links20210126">
-	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
-	<a href="http://cooco.net.cn/" title="组卷网">组卷网</a>
-</div>
 </body>
 </html>

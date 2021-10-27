@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>XXX集团</title>
-	<meta name="keywords" content="XXX集团">
-	<meta name="description" content="XXX集团">
+	<title>遇见河南旅行社</title>
+	<meta name="keywords" content="遇见河南旅行社">
+	<meta name="description" content="遇见河南旅行社">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="shortcut icon" href="images/favicon.ico">
 	
@@ -16,6 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel='stylesheet' type='text/css' media="all" />
 	<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap_zc.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all_zc.css"/>
+<link rel="stylesheet" type="text/css" href="css/top_style_zc.css"/>
 	
 	<!--[if lt IE 9]>
     <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -24,35 +27,39 @@
 
 </head>
 <body>
-	
 <div>
 	<!--header-->
-	<header class="header_zi">
-	   <div class="container">
+	<header class="header home_p" style="position:fixed;background-color: white;">
+	   <div class="container_top">
 		   <div class="logo">
 	   	   		<a href="index.html"><img src="images/logo.png" alt="" /></a>
 		   </div>
 		   <a href="#mmenu" class="phone-nav"><i class="fa fa-list"></i></a>
 		  <div class="logo_right">
-		  	  <nav class="nav">
+		  	 <nav class="nav">
 		   		<ul>    
-		   			<li><a href="index.html">首页</a></li>
-		   			<li><a href="scenic_overview.html">地方名胜古迹</a></li>
-		   			<li><a href="../../../KLSCX.github.io/court_travel.html"  class="active">旅店住宿</a>
+		   			<li><a href="index.html" class="active">首页</a></li>
+		   			<li><a href="scenic_overview.html">名胜古迹</li>
+		   			<li><a href="court_travel.html">旅游住宿</a>
 		   				<ul>
-		   					<li><a href="../../../KLSCX.github.io/court_travel.html">住宿酒店</a></li>
-		   					<li><a href="../../../KLSCX.github.io/court_travel.html">住宿民宅</a></li>
+		   					<li><a href="court_travel.html">酒店展示</a></li>  
+		   					<li><a href="court_travel_show.html">酒店联系</a></li>
 		   				</ul>
 		   			</li>
-		   			<li><a href="comfortable.html">地方历史传说</a></li>
-		   			<li><a href="news.html">珍稀动植物</a>
+		   			<li><a href="comfortable.html">地方传说</a>
+					</li>
+		   			<li><a href="food.html">地方美食</a>
 		   				<ul>
-		   					<li><a href="news.html">公司新闻</a></li>
-		   					<li><a href="news.html">行业新闻</a></li>
+		   					<li><a href="food.html">特色名吃</a></li>
+		   					<li><a href="restaurant.html">地方餐馆</a></li>
+							<li><a href="origin.html">美食起源</a></li>
 		   				</ul>
 		   			</li>
-		   			<li><a href="feedback.html">留言中心</a></li>
-		   			<li><a href="contact.html">联系我们</a></li>
+		   			<li><a href="feedback.html">珍稀生物</a>
+					</li>
+					</li>
+		   			<li><a href="contact.html">联系我们</a>
+					</li>
 		   		</ul>
 		  	 </nav>
 		  	 <div class="search">
@@ -61,15 +68,25 @@
 		  	 		<i class="fa fa-search"></i>		  	
 		  	 	</span>
 		  	 	<span class="y_z">
-		  	 		<a href="" class="zh active">中</a><a href="" class="en">En</a>
-		  	 		
+		  	 		<a href="" class="zh active">中</a><a href="" class="en">En</a>		  	 		
 		  	 	</span>
 		  	 </div>
-		  </div>
-	   	
+		  </div>	   	
 	   </div>
 	</header>
-			
+<!--Include Js-->
+<script src="js/jquery.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--移动端导航-->
+<script src="js/jquery.mmenu.all.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--slick-->
+<script src="js/slick.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<!--placeholder-->
+<script src="js/jquery.placeholder.min_zc.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){ $('input, textarea').placeholder(); });
+</script><br><br><br>
+<script src="js/public_zc.js" type="text/javascript" charset="utf-8"></script>
+
 	<!--banner  start-->
 	<section class="banner_zi">
 	    <div><img src="images/banner_yuan.png" alt=""></div>	   
@@ -172,64 +189,30 @@
 		</div>
 	</div>
 
-    <!--footer  start-->
-      <footer class="footer">
-       <div class="footer_con">
-       		<div class="con">
-       			<div class="nei">
-       				<div class="">
-       					<ul class="di_nav clearfix">
-			   			<li><a href="scenic_overview.html">地方名胜古迹</a></li>
-			   			<li><a href="../../../KLSCX.github.io/court_travel.html">旅游住宿</a></li>
-			   			<li><a href="comfortable.html">地方历史传说</a></li>
-			   			<li><a href="news.html">珍稀动植物</a></li>
-			   			<li><a href="feedback.html">留言中心</a></li>
-			   			<li><a href="contact.html">联系我们</a></li>
-	       				</ul>
-	       				<div class="links">友情链接
-	       					<ul>
-	       						<li><a href="">百度文化</a></li>
-					   			<li><a href="">新浪微博</a></li>
-					   			<li><a href="">百度知道</a></li>
-	       					</ul>
-	       				</div>
-       				</div>
-       				<div class="clear"></div>
-       			</div>
-       		</div>
-       		
-       </div>
-       <div class="copy">Copyright© 2020  版权所有：XXX有限公司 </div>
-	</footer>
-    <!--footer  end-->
+	<!--footer  start-->
+	<footer class="footer">
+		<div class="footer_con">
+			<div class="con">
+				<div class="nei">
+					<div class="">
+						<ul class="di_nav clearfix">
+							<li><a href="scenic_overview.html">名胜古迹</a></li>
+							<li><a href="court_travel.html">旅游住宿</a></li>
+							<li><a href="comfortable.html">地方传说</a></li>
+							<li><a href="news.html">地方美食</a></li>
+							<li><a href="feedback.html">珍稀动植物</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
 
-	<!--移动端  Mmenu-->
-	<nav id="mmenu">
-		
-		<ul>
-			
-			<li><a href="index.html" class="active">首页</a></li>
-   			<li><a href="scenic_overview.html">景区概况</a></li>
-   			<li><a href="../../../KLSCX.github.io/court_travel.html">文苑之旅</a>
-            	<ul>
-   					<li><a href="../../../KLSCX.github.io/court_travel.html">茶艺中心</a></li>
-   					<li><a href="../../../KLSCX.github.io/court_travel.html">万竹林海</a></li>
-   					<li><a href="../../../KLSCX.github.io/court_travel.html">创意中心</a></li>
-   					<li><a href="../../../KLSCX.github.io/court_travel.html">花草园艺</a></li>
-   				</ul>
-            </li>
-   			<li><a href="comfortable.html">舒雅住宅</a></li>
-   			<li><a href="news.html">新闻动态</a>
-   				<ul>
-   					<li><a href="news.html">公司新闻</a></li>
-   					<li><a href="news.html">行业新闻</a></li>
-   				</ul>
-   			</li>
-   			<li><a href="feedback.html">留言中心</a></li>
-   			<li><a href="contact.html">联系我们</a></li>
-			 
-		</ul>
-	</nav>	</div>	
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="copy">Copyright© 2020  版权所有：遇见河南有限公司 </div>
+	</footer>
+	<!--footer  end--></div>
 
 <!--Include Js-->
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
