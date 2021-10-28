@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>学生信息注册页面</title>
+<style type="text/css">
+		.table4_1 table {
+			width:100%;
+			margin:15px 0;
+			border:0;
+		}
+		.table4_1 {
+			background-color:#93DAFF;
+			color:#000000
+		}
+		.table4_1,.table4_1,.table4_1 td {
+			font-size:0.95em;
+			text-align:center;
+			padding:4px;
+			border-collapse:collapse;
+		}
+		.table4_1,.table4_1 td {
+			border: 1px solid #B8B8DC;
+			border-width:1px 0 1px 0
+		}
+		.table4_1 tr {
+			border: 1px solid #B8B8DC;
+		}
+		.table4_1 tr:nth-child(odd){
+			background-color:#C7C7E2;
+		}
+		.table4_1 tr:nth-child(even){
+			background-color:#fdfdfd;
+		}
+		font {
+			font-weight:500;
+		}
+</style>
+<script type="text/javascript">
+//js方法,验证用户名,昵称,密码是否为空,两次密码输入是否一致
+		function check()
+		{
+			if(form1.username.value == "")
+				{
+				alert("账号名称不能为空");
+				return false
+				}
+			else if(form1.email.value == "")
+				{
+				alert("邮箱不能为空");
+				return false
+				}
+			else if(form1.password_a.value == "")
+				{
+				alert("密码不能为空");
+				return false
+				}
+			else if(form1.password_a.value.length < 8)
+				{
+				alert("密码复杂度不够，请输入至少8位密码");
+				return false
+				}
+			else if(form1.password_a.value != form1.password_b.value)
+				{
+				alert("两次输入密码不一致");
+				return false
+				}
+			else if(form1.name.value == "")
+				{
+				alert("姓名不能为空");
+				return false
+				}
+			else if(form1.sex.value == "")
+				{
+				alert("请选择性别");
+				return false
+				}
+			else if(form1.Age.value == "")
+				{
+				alert("年龄不能为空");
+				return false
+				}
+			else if(parseInt(form1.Age.value) < 17)
+				{
+				alert("年龄不符合注册要求(至少17岁)");
+				return false
+				}
+			else if(parseInt(form1.weight.value) <= 30 || parseInt(form1.weight.value) >= 150)
+				{
+				alert("体重不符合注册要求(30-150公斤)");
+				return false
+				}
+			else
+				{
+				alert("恭喜您注册成功");
+				return true
+				}
+		}
+</script>
+</head>
+<body bgcolor="#B8B8DC">
+<!-- 注册表单 -->
+<form name="form1" id="form1" onsubmit="return check()">
+<br><br><br><br>
+<table class=table4_1 border=2  align="center" bgcolor="#ffffff" width="600" height="400">
+<tr><td colspan="2" style="height:85px;"><font face="黑体" color="Coral" size="6">学生信息注册页面</font></td></tr>
+<tr><td><font face="黑体" color="black" size="3">账号名称：</font></td>
+<td><input type="text" name="username" id="username" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">邮箱名称：</font></td>
+<td><input type="text" name="email" id="email" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">密码：</font></td>
+<td><input type="password" name="password_a" id="password_a" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">重复密码：</font></td>
+<td><input type="password" name="password_b" id="password_b" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">姓名：</font></td>
+<td><input type="text" name="name" id="name" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">性别：</font></td>
+<td><input type="radio" value="男" name="sex">男<input type="radio" value="女" name="sex">女</td></tr>
+<tr><td><font face="黑体" color="black" size="3">年龄：</font></td>
+<td><input type="text" name="Age" id="Age" style="width:180px;height:24px;text-align:center">
+<br></td></tr>
+<tr><td><font face="黑体" color="black" size="3">体重：</font></td>
+<td><input type="text" name="weight" id="weight" style="width:180px;height:24px;text-align:center"></td></tr>
+<tr><td><font face="黑体" color="black" size="3">个人简介：</font></td>
+<td><textarea rows="4" cols="30">请简单地介绍一下自己。</textarea>
+<br></td></tr>
+<tr><td colspan="2"><input type="submit" value="注册" style="width:200px;height:30px"><p><a href="mailto:3333333333@qq.com?Subject=Hello%20again">
+联系作者</a></p></td></tr>
+</table>
+</form>
+</body>
+</html>
